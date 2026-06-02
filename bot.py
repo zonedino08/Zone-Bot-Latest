@@ -33,7 +33,7 @@ async def on_presence_update(before, after):
         guild = client.get_guild(SERVER_ID)
         channel = guild.get_channel(GENERAL_CHANNEL_ID)
         if channel:
-            await channel.send("🟢 **Zone lagi online nih!** Siapa yang mau mabar? 🎮")
+            await channel.send("🟢 **Mas Zone lagi online nih!** ")
         zone_was_online = True
     elif not is_online_now and was_online:
         zone_was_online = False
